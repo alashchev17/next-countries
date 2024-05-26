@@ -1,0 +1,25 @@
+.button {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+  &::before {
+    content: '';
+    background-image: url('./icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
