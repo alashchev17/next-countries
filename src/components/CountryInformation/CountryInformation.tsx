@@ -26,12 +26,12 @@ export const CountryInformation = ({ country }: CountryInformationProps) => {
           )
         }
         return (
-          <>
-            <span key={item.title}>
+          <div key={item.title} className="flex flex-col w-full gap-3 items-start">
+            <span>
               {item.title}: <span className="font-bold">{item.value}</span>
             </span>
-            {item.isDivided && <div className="w-full rounded-full h-[1px] bg-zinc-200" />}
-          </>
+            {item.isDivided && <div className="w-full rounded-full h-[1px] bg-zinc-200 self-stretch" />}
+          </div>
         )
       })}
     </div>

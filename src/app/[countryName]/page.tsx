@@ -28,7 +28,7 @@ export default async function CountryPage({ params }: CountryPageProps) {
 
   return (
     <>
-      <div className="relative w-full text-center">
+      <div className="w-full text-center flex flex-col items-center">
         <BackButton />
         <Heading maxWidth={280}>{country.full_name ? country.full_name : country.name}</Heading>
       </div>
